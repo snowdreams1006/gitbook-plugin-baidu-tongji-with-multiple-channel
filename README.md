@@ -24,36 +24,12 @@
 
 ````json
 {
-    "title": "baidu-tongji-with-multiple-channel 插件官方文档",
-    "author": "snowdreams1006",
-    "description": "gitbook-plugin-baidu-tongji-with-multiple-channel 插件官方文档",
-    "gitbook": "3.2.3",
     "plugins": [
         "baidu-tongji-with-multiple-channel"
     ],
     "pluginsConfig": {
         "baidu-tongji-with-multiple-channel": {
-            "url": "https://hm.baidu.com/hm.js",
-            "multipleChannelConfig": {
-                "snowdreams1006.tech":{
-                    "token": "468a97b20b79bc025d27afbee73d2f39"
-                },
-                "blog.snowdreams1006.cn":{
-                    "token": "606f5db455f771889dcfd16bb2bd313b"
-                },
-                "snowdreams1006.github.io":{
-                    "token": "5273b2f99de3bc190886abb53f62267e"
-                },
-                "snowdreams1006.gitee.io":{
-                    "token": "60ec676f32be4579eb53a430e153f677"
-                },
-                "snowdreams1006.gitlab.io":{
-                    "token": "187a0e5601c4e4987cdb5b8df09c9b21"
-                },
-                "snowdreams1006.gitbook.io":{
-                    "token": "6e2ee1b7bea146b2d6d9382bbf803083"
-                }
-            }
+            "token": "5273b2f99de3bc190886abb53f62267e"
         }
     }
 }
@@ -138,8 +114,8 @@ gitbook serve
 
 |名称|示例|备注|
 |:-:|:-:|:-:|
-|网站域名|snowdreams1006.github.io|支持主域名,二级域名,子目录和wap站域名|
-|网站首页|https://snowdreams1006.github.io/|必选|
+|网站域名|`snowdreams1006.github.io`|支持主域名,二级域名,子目录和wap站域名|
+|网站首页|`https://snowdreams1006.github.io/`|必选|
 |网站名称|雪之梦技术驿站|可选|
 |行业类别|博客-教育|可选|
 
@@ -157,13 +133,21 @@ var _hmt = _hmt || [];
 
 |名称|示例|备注|
 |:-:|:-:|:-:|
-|完整统计地址|https://hm.baidu.com/hm.js?5273b2f99de3bc190886abb53f62267e|统计脚本地址|
-|url|https://hm.baidu.com/hm.js|每个网站的值相同|
-|token|5273b2f99de3bc190886abb53f62267e|每个网站的值不同|
+|源地址|`https://hm.baidu.com/hm.js?5273b2f99de3bc190886abb53f62267e`|统计脚本地址|
+|url|`https://hm.baidu.com/hm.js`|每个网站的值相同|
+|token|`5273b2f99de3bc190886abb53f62267e`|每个网站的值不同|
 
 3. 复制刚刚申请的 `token` 以及 `url` 填写到 `book.json` 配置文件中,上传网站并验证是否成功.
 
-多渠道配置如下,`url` 作为公共地址,`multipleChannelConfig` 是多渠道单独配置,其中 `"snowdreams1006.github.io"` 键名是网站域名,即 `location.hostname` 的值,也是在百度统计后台新增网站时填写的域名.
+单渠道配置仅仅需要填写 `token` 的值即可,其余选项可不操作.
+
+```json
+"baidu-tongji-with-multiple-channel": {
+  "token": "5273b2f99de3bc190886abb53f62267e"
+}
+```
+
+多渠道配置需要填写**网站域名**对应的 `token` 的值,为了简化操作可以在同级目录填写 `url` 作为公共 `url`,参考如下:
 
 ```json
 "baidu-tongji-with-multiple-channel": {
