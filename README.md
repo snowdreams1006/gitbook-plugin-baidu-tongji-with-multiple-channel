@@ -51,7 +51,14 @@
 
 ```json
 {
-    "plugins": ["baidu-tongji-with-multiple-channel"]
+    "plugins": [
+        "baidu-tongji-with-multiple-channel"
+    ],
+    "pluginsConfig": {
+        "baidu-tongji-with-multiple-channel": {
+            "token": "百度统计网站标识值"
+        }
+    }
 }
 ```
 
@@ -114,7 +121,7 @@ gitbook serve
 
 ### 步骤＃1- 注册百度统计网站
 
-登录[百度统计官网](https://tongji.baidu.com/),注册或者登录百度统计后台,点击**新增网站**并填写网站相关信息.
+访问[百度统计官网](https://tongji.baidu.com/),注册或者登录百度统计账号,点击**新增网站**并填写网站相关信息.
 
 |名称|示例|备注|
 |:-:|:-:|:-:|
@@ -125,7 +132,7 @@ gitbook serve
 
 ### 步骤＃2 - 获取百度统计代码
 
-**新增网站**成功后,点击**代码获取**,复制统计代码脚本如下:
+**新增网站**成功后,点击**代码获取**,复制统计代码如下:
 
 ```js
 var _hmt = _hmt || [];
@@ -194,7 +201,24 @@ var _hmt = _hmt || [];
     "plugins": ["baidu-tongji-with-multiple-channel"],
     "pluginsConfig": {
         "baidu-tongji-with-multiple-channel": {
-            "method": "baidu-tongji-with-multiple-channelJson"
+            "snowdreams1006.tech":{
+                "token": "468a97b20b79bc025d27afbee73d2f39"
+            },
+            "blog.snowdreams1006.cn":{
+                "token": "606f5db455f771889dcfd16bb2bd313b"
+            },
+            "snowdreams1006.github.io":{
+                "token": "5273b2f99de3bc190886abb53f62267e"
+            },
+            "snowdreams1006.gitee.io":{
+                "token": "60ec676f32be4579eb53a430e153f677"
+            },
+            "snowdreams1006.gitlab.io":{
+                "token": "187a0e5601c4e4987cdb5b8df09c9b21"
+            },
+            "snowdreams1006.gitbook.io":{
+                "token": "6e2ee1b7bea146b2d6d9382bbf803083"
+            }
         }
     }
 }
@@ -209,7 +233,7 @@ var _hmt = _hmt || [];
     "plugins": ["baidu-tongji-with-multiple-channel"],
     "pluginsConfig": {
         "baidu-tongji-with-multiple-channel": {
-            "method": "baidu-tongji-with-multiple-channelJson"
+            "token": "5273b2f99de3bc190886abb53f62267e"
         }
     }
 }

@@ -256,7 +256,14 @@
 <p>&#x5728;&#x60A8;&#x7684; <code>gitbook</code> &#x7684; <code>book.json</code> &#x6587;&#x4EF6;&#x4E2D;,&#x5C06; <code>baidu-tongji-with-multiple-channel</code> &#x6DFB;&#x52A0;&#x5230; <code>plugins</code> &#x5217;&#x8868;&#x4E2D;.</p>
 <p>&#x8FD9;&#x662F;&#x6700;&#x7B80;&#x5355;&#x7684;&#x793A;&#x4F8B;: </p>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;plugins&quot;</span>: [<span class="hljs-string">&quot;baidu-tongji-with-multiple-channel&quot;</span>]
+    <span class="hljs-string">&quot;plugins&quot;</span>: [
+        <span class="hljs-string">&quot;baidu-tongji-with-multiple-channel&quot;</span>
+    ],
+    <span class="hljs-string">&quot;pluginsConfig&quot;</span>: {
+        <span class="hljs-string">&quot;baidu-tongji-with-multiple-channel&quot;</span>: {
+            <span class="hljs-string">&quot;token&quot;</span>: <span class="hljs-string">&quot;&#x767E;&#x5EA6;&#x7EDF;&#x8BA1;&#x7F51;&#x7AD9;&#x6807;&#x8BC6;&#x503C;&quot;</span>
+        }
+    }
 }
 </code></pre>
 <p>&#x6B64;&#x5916;,&#x53D7;&#x652F;&#x6301;&#x7684;&#x914D;&#x7F6E;&#x9009;&#x9879;&#x5982;&#x4E0B;:</p>
@@ -304,7 +311,7 @@
 </code></pre>
 <h2 id="&#x7533;&#x8BF7;">&#x7533;&#x8BF7;</h2>
 <h3 id="&#x6B65;&#x9AA4;&#xFF03;1--&#x6CE8;&#x518C;&#x767E;&#x5EA6;&#x7EDF;&#x8BA1;&#x7F51;&#x7AD9;">&#x6B65;&#x9AA4;&#xFF03;1- &#x6CE8;&#x518C;&#x767E;&#x5EA6;&#x7EDF;&#x8BA1;&#x7F51;&#x7AD9;</h3>
-<p>&#x767B;&#x5F55;<a href="https://tongji.baidu.com/" target="_blank">&#x767E;&#x5EA6;&#x7EDF;&#x8BA1;&#x5B98;&#x7F51;</a>,&#x6CE8;&#x518C;&#x6216;&#x8005;&#x767B;&#x5F55;&#x767E;&#x5EA6;&#x7EDF;&#x8BA1;&#x540E;&#x53F0;,&#x70B9;&#x51FB;<strong>&#x65B0;&#x589E;&#x7F51;&#x7AD9;</strong>&#x5E76;&#x586B;&#x5199;&#x7F51;&#x7AD9;&#x76F8;&#x5173;&#x4FE1;&#x606F;.</p>
+<p>&#x8BBF;&#x95EE;<a href="https://tongji.baidu.com/" target="_blank">&#x767E;&#x5EA6;&#x7EDF;&#x8BA1;&#x5B98;&#x7F51;</a>,&#x6CE8;&#x518C;&#x6216;&#x8005;&#x767B;&#x5F55;&#x767E;&#x5EA6;&#x7EDF;&#x8BA1;&#x8D26;&#x53F7;,&#x70B9;&#x51FB;<strong>&#x65B0;&#x589E;&#x7F51;&#x7AD9;</strong>&#x5E76;&#x586B;&#x5199;&#x7F51;&#x7AD9;&#x76F8;&#x5173;&#x4FE1;&#x606F;.</p>
 <table>
 <thead>
 <tr>
@@ -337,7 +344,7 @@
 </tbody>
 </table>
 <h3 id="&#x6B65;&#x9AA4;&#xFF03;2---&#x83B7;&#x53D6;&#x767E;&#x5EA6;&#x7EDF;&#x8BA1;&#x4EE3;&#x7801;">&#x6B65;&#x9AA4;&#xFF03;2 - &#x83B7;&#x53D6;&#x767E;&#x5EA6;&#x7EDF;&#x8BA1;&#x4EE3;&#x7801;</h3>
-<p><strong>&#x65B0;&#x589E;&#x7F51;&#x7AD9;</strong>&#x6210;&#x529F;&#x540E;,&#x70B9;&#x51FB;<strong>&#x4EE3;&#x7801;&#x83B7;&#x53D6;</strong>,&#x590D;&#x5236;&#x7EDF;&#x8BA1;&#x4EE3;&#x7801;&#x811A;&#x672C;&#x5982;&#x4E0B;:</p>
+<p><strong>&#x65B0;&#x589E;&#x7F51;&#x7AD9;</strong>&#x6210;&#x529F;&#x540E;,&#x70B9;&#x51FB;<strong>&#x4EE3;&#x7801;&#x83B7;&#x53D6;</strong>,&#x590D;&#x5236;&#x7EDF;&#x8BA1;&#x4EE3;&#x7801;&#x5982;&#x4E0B;:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> _hmt = _hmt || [];
 (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">var</span> hm = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;script&quot;</span>);
@@ -419,7 +426,24 @@
     <span class="hljs-string">&quot;plugins&quot;</span>: [<span class="hljs-string">&quot;baidu-tongji-with-multiple-channel&quot;</span>],
     <span class="hljs-string">&quot;pluginsConfig&quot;</span>: {
         <span class="hljs-string">&quot;baidu-tongji-with-multiple-channel&quot;</span>: {
-            <span class="hljs-string">&quot;method&quot;</span>: <span class="hljs-string">&quot;baidu-tongji-with-multiple-channelJson&quot;</span>
+            <span class="hljs-string">&quot;snowdreams1006.tech&quot;</span>:{
+                <span class="hljs-string">&quot;token&quot;</span>: <span class="hljs-string">&quot;468a97b20b79bc025d27afbee73d2f39&quot;</span>
+            },
+            <span class="hljs-string">&quot;blog.snowdreams1006.cn&quot;</span>:{
+                <span class="hljs-string">&quot;token&quot;</span>: <span class="hljs-string">&quot;606f5db455f771889dcfd16bb2bd313b&quot;</span>
+            },
+            <span class="hljs-string">&quot;snowdreams1006.github.io&quot;</span>:{
+                <span class="hljs-string">&quot;token&quot;</span>: <span class="hljs-string">&quot;5273b2f99de3bc190886abb53f62267e&quot;</span>
+            },
+            <span class="hljs-string">&quot;snowdreams1006.gitee.io&quot;</span>:{
+                <span class="hljs-string">&quot;token&quot;</span>: <span class="hljs-string">&quot;60ec676f32be4579eb53a430e153f677&quot;</span>
+            },
+            <span class="hljs-string">&quot;snowdreams1006.gitlab.io&quot;</span>:{
+                <span class="hljs-string">&quot;token&quot;</span>: <span class="hljs-string">&quot;187a0e5601c4e4987cdb5b8df09c9b21&quot;</span>
+            },
+            <span class="hljs-string">&quot;snowdreams1006.gitbook.io&quot;</span>:{
+                <span class="hljs-string">&quot;token&quot;</span>: <span class="hljs-string">&quot;6e2ee1b7bea146b2d6d9382bbf803083&quot;</span>
+            }
         }
     }
 }
@@ -434,7 +458,7 @@
     <span class="hljs-string">&quot;plugins&quot;</span>: [<span class="hljs-string">&quot;baidu-tongji-with-multiple-channel&quot;</span>],
     <span class="hljs-string">&quot;pluginsConfig&quot;</span>: {
         <span class="hljs-string">&quot;baidu-tongji-with-multiple-channel&quot;</span>: {
-            <span class="hljs-string">&quot;method&quot;</span>: <span class="hljs-string">&quot;baidu-tongji-with-multiple-channelJson&quot;</span>
+            <span class="hljs-string">&quot;token&quot;</span>: <span class="hljs-string">&quot;5273b2f99de3bc190886abb53f62267e&quot;</span>
         }
     }
 }
@@ -531,7 +555,7 @@ This article was originally published in&#x300C;snowdreams1006.tech&#x300D;,Repr
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":["favicon-absolute","github-buttons","edit-link-plus","code","readmore","copyright","mygitalk","icp","baidu-tongji-with-multiple-channel"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{"snowdreams1006.tech":{"token":"468a97b20b79bc025d27afbee73d2f39"},"blog.snowdreams1006.cn":{"token":"606f5db455f771889dcfd16bb2bd313b"},"snowdreams1006.github.io":{"token":"5273b2f99de3bc190886abb53f62267e"},"snowdreams1006.gitee.io":{"token":"60ec676f32be4579eb53a430e153f677"},"snowdreams1006.gitlab.io":{"token":"187a0e5601c4e4987cdb5b8df09c9b21"},"snowdreams1006.gitbook.io":{"token":"6e2ee1b7bea146b2d6d9382bbf803083"}},"url":"https://hm.baidu.com/hm.js"},"copyright":{"copyProtect":false,"site":"https://snowdreams1006.github.io/gitbook-plugin-baidu-tongji-with-multiple-channel","author":"snowdreams1006","website":"snowdreams1006.tech","image":"https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"},"search":{},"edit-link-plus":{"label":"我要反馈","base":{"snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs","snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs","snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs"},"defaultBase":"https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs"},"readmore":{"allowDomain":"localhost","blogId":"15702-1569305559839-744","name":"雪之梦技术驿站","qrcode":"https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg","keyword":"vip"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{"120x120":"/apple-touch-icon-120.png","180x180":"/apple-touch-icon-180.png"},"appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconPrecomposedMore":{"120x120":"/apple-touch-icon-precomposed-120.png","180x180":"/apple-touch-icon-precomposed-180.png"},"favicon":"/favicon.ico","bookmark":"/bookmark.ico","appleTouchIcon152":"/apple-touch-icon-152.png"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"icp":{"link":"http://www.beian.miit.gov.cn/","style":{},"number":"浙ICP备18042346号"},"github-buttons":{"buttons":[{"user":"snowdreams1006","repo":"gitbook-plugin-baidu-tongji-with-multiple-channel","type":"star","size":"small"}]},"mygitalk":{"flipMoveOptions":{},"clientID":"dddbf6539f8f8ca57cef","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["snowdreams1006"],"createIssueManually":false,"distractionFreeMode":false,"repo":"gitbook-plugin-baidu-tongji-with-multiple-channel","owner":"snowdreams1006","enableHotKey":true,"clientSecret":"45e8bbcbb62b09d93f471d53e55568d7a1370b0f","pagerDirection":"last","labels":["Gitalk"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"snowdreams1006","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"baidu-tongji-with-multiple-channel 插件官方文档","links":{"sidebar":{"blog":"https://snowdreams1006.tech/"}},"gitbook":"3.2.3","description":"gitbook-plugin-baidu-tongji-with-multiple-channel 插件官方文档"},"file":{"path":"README.md","mtime":"2020-05-10T13:22:40.178Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-10T13:50:24.918Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":["favicon-absolute","github-buttons","edit-link-plus","code","readmore","copyright","mygitalk","icp","baidu-tongji-with-multiple-channel"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{"snowdreams1006.tech":{"token":"468a97b20b79bc025d27afbee73d2f39"},"blog.snowdreams1006.cn":{"token":"606f5db455f771889dcfd16bb2bd313b"},"snowdreams1006.github.io":{"token":"5273b2f99de3bc190886abb53f62267e"},"snowdreams1006.gitee.io":{"token":"60ec676f32be4579eb53a430e153f677"},"snowdreams1006.gitlab.io":{"token":"187a0e5601c4e4987cdb5b8df09c9b21"},"snowdreams1006.gitbook.io":{"token":"6e2ee1b7bea146b2d6d9382bbf803083"}},"url":"https://hm.baidu.com/hm.js"},"copyright":{"copyProtect":false,"site":"https://snowdreams1006.github.io/gitbook-plugin-baidu-tongji-with-multiple-channel","author":"snowdreams1006","website":"snowdreams1006.tech","image":"https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"},"search":{},"edit-link-plus":{"label":"我要反馈","base":{"snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs","snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs","snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs"},"defaultBase":"https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs"},"readmore":{"allowDomain":"localhost","blogId":"15702-1569305559839-744","name":"雪之梦技术驿站","qrcode":"https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg","keyword":"vip"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{"120x120":"/apple-touch-icon-120.png","180x180":"/apple-touch-icon-180.png"},"appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconPrecomposedMore":{"120x120":"/apple-touch-icon-precomposed-120.png","180x180":"/apple-touch-icon-precomposed-180.png"},"favicon":"/favicon.ico","bookmark":"/bookmark.ico","appleTouchIcon152":"/apple-touch-icon-152.png"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"icp":{"link":"http://www.beian.miit.gov.cn/","style":{},"number":"浙ICP备18042346号"},"github-buttons":{"buttons":[{"user":"snowdreams1006","repo":"gitbook-plugin-baidu-tongji-with-multiple-channel","type":"star","size":"small"}]},"mygitalk":{"flipMoveOptions":{},"clientID":"dddbf6539f8f8ca57cef","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["snowdreams1006"],"createIssueManually":false,"distractionFreeMode":false,"repo":"gitbook-plugin-baidu-tongji-with-multiple-channel","owner":"snowdreams1006","enableHotKey":true,"clientSecret":"45e8bbcbb62b09d93f471d53e55568d7a1370b0f","pagerDirection":"last","labels":["Gitalk"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"snowdreams1006","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"baidu-tongji-with-multiple-channel 插件官方文档","links":{"sidebar":{"blog":"https://snowdreams1006.tech/"}},"gitbook":"3.2.3","description":"gitbook-plugin-baidu-tongji-with-multiple-channel 插件官方文档"},"file":{"path":"README.md","mtime":"2020-05-10T15:48:47.968Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-10T15:49:03.310Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
