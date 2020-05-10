@@ -1,6 +1,6 @@
 {
     "name": "gitbook-plugin-baidu-tongji-with-multiple-channel",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Gitbook 百度统计插件,支持多渠道独立统计,一份源码多处部署独立统计.",
     "main": "index.js",
     "engines": {
@@ -22,15 +22,15 @@
     "gitbook": {
         "properties": {
             "token": {
-              "description": "百度统计token",
-              "required": false,
-              "type": "string"
+                "description": "百度统计token",
+                "required": false,
+                "type": "string"
             },
             "url": {
-              "description": "百度统计地址",
-              "default":"https://hm.baidu.com/hm.js",
-              "required": false,
-              "type": "string"
+                "description": "百度统计地址",
+                "default": "https://hm.baidu.com/hm.js",
+                "required": false,
+                "type": "string"
             },
             "multipleChannelConfig": {
                 "description": "百度统计多渠道配置",
