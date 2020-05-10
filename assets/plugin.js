@@ -17,6 +17,7 @@ require(["gitbook"], function(gitbook) {
                 }
             }
         }
+        
         // 自动插入百度统计代码
         if(url !== "" && token !== ""){
             var hm = document.createElement("script");
