@@ -65,8 +65,8 @@
             "copyProtect": false
         },
         "mygitalk": {
-            "clientID": "b41f45e89afe86e4782f",
-            "clientSecret": "50efaa46056c41abbdc7537cd09061677d02c0af",
+            "clientID": "dddbf6539f8f8ca57cef",
+            "clientSecret": "45e8bbcbb62b09d93f471d53e55568d7a1370b0f",
             "repo": "gitbook-plugin-baidu-tongji-with-multiple-channel",
             "owner": "snowdreams1006",
             "admin": ["snowdreams1006"],
