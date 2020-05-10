@@ -1,9 +1,27 @@
 require(["gitbook"], function(gitbook) {
     gitbook.events.bind("start", function(e, config) {
-        config["baidu-tongji"] = config["baidu-tongji"] || {};
-        var hm = document.createElement('script');
-        hm.src =config["baidu-tongji"].url+'?' + config["baidu-tongji"].token;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(hm, s);
+        // 插件配置
+        var config = config["baidu-tongji-with-multiple-channel"] || {};
+        var token = config.token;
+        var url = config.url;
+        var multipleChannelConfig = config.multipleChannelConfig;
+
+        // 开启多渠道配置开关并且存在多渠道配置
+        if (JSON.stringify(multipleChannelConfig) !== "{}") {
+            var currentHost = location.hostname;
+            for(var channelHost in multipleChannelConfig){
+                if (currentHost == channelHost) {
+                    token = multipleChannelConfig[channelHost].token || token;
+                    url = multipleChannelConfig[channelHost].url || url;
+                    break;
+                }
+            }
+        }
+        if(url !== "" && token !== ""){
+        var hm = document.createElement("script");
+            hm.src = url + '?' + token;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        }
     });
 });

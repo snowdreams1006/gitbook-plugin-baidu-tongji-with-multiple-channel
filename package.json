@@ -22,35 +22,20 @@
     "gitbook": {
         "properties": {
             "token": {
-              "description": "用户在百度统计中新增网站后生成的token",
-              "required": true,
+              "description": "百度统计token",
+              "required": false,
               "type": "string"
             },
             "url": {
-              "description": "百度统计js地址",
+              "description": "百度统计地址",
               "default":"https://hm.baidu.com/hm.js",
               "required": false,
               "type": "string"
             },
-            "type": {
-                "type": "string",
-                "title": "render type",
+            "multipleChannelConfig": {
+                "description": "百度统计多渠道配置",
                 "required": false,
-                "default": "markdown",
-                "description": "some supported methods such as markdown or console or html"
-            },
-            "method": {
-                "type": "string",
-                "title": "jsbaidu-tongji-with-multiple-channel api method",
-                "required": false,
-                "default": "baidu-tongji-with-multiple-channelChars",
-                "description": "some supported methods such as baidu-tongji-with-multiple-channelChars or baidu-tongji-with-multiple-channelWords or baidu-tongji-with-multiple-channelWordsWithSpace or baidu-tongji-with-multiple-channelLines or baidu-tongji-with-multiple-channelTrimmedLines or baidu-tongji-with-multiple-channelSentences or baidu-tongji-with-multiple-channelJson or baidu-tongji-with-multiple-channelArrays"
-            },
-            "options": {
-                "type": "object",
-                "title": "jsbaidu-tongji-with-multiple-channel api options",
-                "required": false,
-                "description": "some methods may not support options"
+                "type": "object"
             }
         }
     },
@@ -62,9 +47,5 @@
     "bugs": {
         "url": "https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/issues"
     },
-    "homepage": "https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel#readme",
-    "dependencies": {
-        "baidu-tongji-with-multiple-channel": "^4.0.2",
-        "colors": "^1.4.0"
-    }
+    "homepage": "https://snowdreams1006.github.io/gitbook-plugin-baidu-tongji-with-multiple-channel/"
 }

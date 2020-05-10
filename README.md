@@ -1,5 +1,7 @@
 # 百度统计
 
+> https://github.com/huisman6/gitbook-plugin-baidu-tongji
+
 代码copy自仓库：https://github.com/wisedu/gitbook-plugin-baidu-wis
 
 主要调整了以下两点：
