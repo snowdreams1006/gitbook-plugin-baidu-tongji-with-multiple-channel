@@ -38,13 +38,7 @@
 **效果**
 
 ```js
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?5273b2f99de3bc190886abb53f62267e";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+<script src="https://hm.baidu.com/hm.js?5273b2f99de3bc190886abb53f62267e"></script>
 ```
 
 ## 用法
@@ -88,7 +82,7 @@ var _hmt = _hmt || [];
 
 ### 步骤＃2- 运行 `gitbook` 命令
 
-1. 运行 `gitbook install` .它将自动为您的 `gitbook` 安装 `baidu-tongji-with-multiple-channel` 插件.
+- 运行 `gitbook install` .它将自动为您的 `gitbook` 安装 `baidu-tongji-with-multiple-channel` 插件.
 
 > 该步骤仅需要允许一次即可.
 
@@ -102,15 +96,25 @@ gitbook install
 npm install gitbook-plugin-baidu-tongji-with-multiple-channel
 ```
 
-2. 像往常一样构建您的书（ `gitbook build` ）或服务（ `gitbook serve` ）.
+- 像往常一样构建您的书（ `gitbook build` ）或服务（ `gitbook serve` ）.
 
 ```bash
 gitbook serve
 ```
 
+### 步骤＃3- 验证是否注入百度统计代码
+
+上传网站后访问网站首页检查是否自动注入百度统计脚本文件,也在百度统计后台检测是否配置成功.
+
+```js
+<script src="https://hm.baidu.com/hm.js?5273b2f99de3bc190886abb53f62267e"></script>
+```
+
 ## 申请
 
-1. 登录[百度统计官网](https://tongji.baidu.com/),注册或者登录百度统计后台,点击**[新增网站]**并填写网站相关信息.
+### 步骤＃1- 注册百度统计网站
+
+登录[百度统计官网](https://tongji.baidu.com/),注册或者登录百度统计后台,点击**新增网站**并填写网站相关信息.
 
 |名称|示例|备注|
 |:-:|:-:|:-:|
@@ -119,7 +123,9 @@ gitbook serve
 |网站名称|雪之梦技术驿站|可选|
 |行业类别|博客-教育|可选|
 
-2. **[新增网站]**成功后,点击**[代码获取]**,复制统计代码脚本如下:
+### 步骤＃2 - 获取百度统计代码
+
+**新增网站**成功后,点击**代码获取**,复制统计代码脚本如下:
 
 ```js
 var _hmt = _hmt || [];
@@ -137,9 +143,11 @@ var _hmt = _hmt || [];
 |url|`https://hm.baidu.com/hm.js`|每个网站的值相同|
 |token|`5273b2f99de3bc190886abb53f62267e`|每个网站的值不同|
 
-3. 复制刚刚申请的 `token` 以及 `url` 填写到 `book.json` 配置文件中,上传网站并验证是否成功.
+### 步骤＃3- 填写百度统计配置
 
-单渠道配置仅仅需要填写 `token` 的值即可,其余选项可不操作.
+复制刚刚申请的 `token` 以及 `url` 填写到 `book.json` 配置文件中,按照实际情况填写百度统计配置信息.
+
+- 单渠道配置仅仅需要填写 `token` 的值即可,其余选项可选.
 
 ```json
 "baidu-tongji-with-multiple-channel": {
@@ -147,7 +155,7 @@ var _hmt = _hmt || [];
 }
 ```
 
-多渠道配置需要填写**网站域名**对应的 `token` 的值,为了简化操作可以在同级目录填写 `url` 作为公共 `url`,参考如下:
+- 多渠道除了需要填写**网站域名**对应的 `token` 的值,还需要填写百度统计 `url`.
 
 ```json
 "baidu-tongji-with-multiple-channel": {
