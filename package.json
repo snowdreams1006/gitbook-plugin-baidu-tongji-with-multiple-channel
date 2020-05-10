@@ -1,0 +1,70 @@
+{
+    "name": "gitbook-plugin-baidu-tongji-with-multiple-channel",
+    "version": "0.0.1",
+    "description": "Gitbook 百度统计插件,支持多渠道独立统计,一份源码多处部署独立统计.",
+    "main": "index.js",
+    "engines": {
+        "gitbook": ">=2.5.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel.git"
+    },
+    "keywords": [
+        "gitbook-plugin-baidu-tongji-with-multiple-channel",
+        "gitbook-plugin",
+        "baidu-tongji-with-multiple-channel",
+        "baidu-tongji",
+        "tongji",
+        "baidu-analytics",
+        "analytics"
+    ],
+    "gitbook": {
+        "properties": {
+            "token": {
+              "description": "用户在百度统计中新增网站后生成的token",
+              "required": true,
+              "type": "string"
+            },
+            "url": {
+              "description": "百度统计js地址",
+              "default":"https://hm.baidu.com/hm.js",
+              "required": false,
+              "type": "string"
+            },
+            "type": {
+                "type": "string",
+                "title": "render type",
+                "required": false,
+                "default": "markdown",
+                "description": "some supported methods such as markdown or console or html"
+            },
+            "method": {
+                "type": "string",
+                "title": "jsbaidu-tongji-with-multiple-channel api method",
+                "required": false,
+                "default": "baidu-tongji-with-multiple-channelChars",
+                "description": "some supported methods such as baidu-tongji-with-multiple-channelChars or baidu-tongji-with-multiple-channelWords or baidu-tongji-with-multiple-channelWordsWithSpace or baidu-tongji-with-multiple-channelLines or baidu-tongji-with-multiple-channelTrimmedLines or baidu-tongji-with-multiple-channelSentences or baidu-tongji-with-multiple-channelJson or baidu-tongji-with-multiple-channelArrays"
+            },
+            "options": {
+                "type": "object",
+                "title": "jsbaidu-tongji-with-multiple-channel api options",
+                "required": false,
+                "description": "some methods may not support options"
+            }
+        }
+    },
+    "author": {
+        "name": "snowdreams1006",
+        "email": "snowdreams1006@163.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/issues"
+    },
+    "homepage": "https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel#readme",
+    "dependencies": {
+        "baidu-tongji-with-multiple-channel": "^4.0.2",
+        "colors": "^1.4.0"
+    }
+}

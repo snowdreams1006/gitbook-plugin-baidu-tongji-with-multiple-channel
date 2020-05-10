@@ -1,0 +1,82 @@
+{
+    "title": "diff docs",
+    "author": "snowdreams1006",
+    "description": "gitbook-plugin-diff docs",
+    "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "blog": "https://snowdreams1006.tech/"
+        }
+    },
+    "plugins": [
+        "favicon-absolute",
+        "github-buttons",
+        "edit-link-plus",
+        "code",
+        "readmore",
+        "copyright",
+        "mygitalk",
+        "icp",
+        "diff"
+    ],
+    "pluginsConfig": {
+        "favicon-absolute": {
+            "favicon": "/favicon.ico",
+            "bookmark": "/bookmark.ico",
+            "appleTouchIcon152": "/apple-touch-icon-152.png",
+            "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png",
+            "appleTouchIconMore": {
+                "120x120": "/apple-touch-icon-120.png",
+                "180x180": "/apple-touch-icon-180.png"
+            },
+            "appleTouchIconPrecomposedMore": {
+                "120x120": "/apple-touch-icon-precomposed-120.png",
+                "180x180": "/apple-touch-icon-precomposed-180.png"
+            }
+        },
+        "github-buttons": {
+            "buttons": [{
+                "user": "snowdreams1006",
+                "repo": "gitbook-plugin-diff",
+                "type": "star",
+                "size": "small"
+            }]
+        },
+        "edit-link-plus": {
+            "base": {
+              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-diff/edit/master/docs",
+              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-diff/edit/master/docs",
+              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-diff/edit/master/docs"
+            },
+            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-diff/edit/master/docs",
+            "label": "Edit This Page"
+        },
+        "readmore": {
+            "blogId": "15702-1569305559839-744",
+            "name": "雪之梦技术驿站",
+            "qrcode": "https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg",
+            "keyword": "vip"
+        },
+        "copyright": {
+            "site": "https://snowdreams1006.github.io/gitbook-plugin-diff",
+            "author": "snowdreams1006",
+            "website": "snowdreams1006.tech",
+            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png",
+            "copyProtect": false
+        },
+        "mygitalk": {
+            "clientID": "b41f45e89afe86e4782f",
+            "clientSecret": "50efaa46056c41abbdc7537cd09061677d02c0af",
+            "repo": "gitbook-plugin-diff",
+            "owner": "snowdreams1006",
+            "admin": ["snowdreams1006"],
+            "distractionFreeMode": false
+        },
+        "icp": {
+            "number": "浙ICP备18042346号"
+        },
+        "diff": {
+            "type": "html"
+        }
+    }
+}
