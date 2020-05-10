@@ -1,0 +1,102 @@
+{
+    "title": "baidu-tongji-with-multiple-channel 插件官方文档",
+    "author": "snowdreams1006",
+    "description": "gitbook-plugin-baidu-tongji-with-multiple-channel 插件官方文档",
+    "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "blog": "https://snowdreams1006.tech/"
+        }
+    },
+    "plugins": [
+        "favicon-absolute",
+        "github-buttons",
+        "edit-link-plus",
+        "code",
+        "readmore",
+        "copyright",
+        "mygitalk",
+        "icp",
+        "baidu-tongji-with-multiple-channel"
+    ],
+    "pluginsConfig": {
+        "favicon-absolute": {
+            "favicon": "/favicon.ico",
+            "bookmark": "/bookmark.ico",
+            "appleTouchIcon152": "/apple-touch-icon-152.png",
+            "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png",
+            "appleTouchIconMore": {
+                "120x120": "/apple-touch-icon-120.png",
+                "180x180": "/apple-touch-icon-180.png"
+            },
+            "appleTouchIconPrecomposedMore": {
+                "120x120": "/apple-touch-icon-precomposed-120.png",
+                "180x180": "/apple-touch-icon-precomposed-180.png"
+            }
+        },
+        "github-buttons": {
+            "buttons": [{
+                "user": "snowdreams1006",
+                "repo": "gitbook-plugin-baidu-tongji-with-multiple-channel",
+                "type": "star",
+                "size": "small"
+            }]
+        },
+        "edit-link-plus": {
+            "base": {
+              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs",
+              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs",
+              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs"
+            },
+            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs",
+            "label": "我要反馈"
+        },
+        "readmore": {
+            "blogId": "15702-1569305559839-744",
+            "name": "雪之梦技术驿站",
+            "qrcode": "https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg",
+            "keyword": "vip"
+        },
+        "copyright": {
+            "site": "https://snowdreams1006.github.io/gitbook-plugin-baidu-tongji-with-multiple-channel",
+            "author": "snowdreams1006",
+            "website": "snowdreams1006.tech",
+            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png",
+            "copyProtect": false
+        },
+        "mygitalk": {
+            "clientID": "b41f45e89afe86e4782f",
+            "clientSecret": "50efaa46056c41abbdc7537cd09061677d02c0af",
+            "repo": "gitbook-plugin-baidu-tongji-with-multiple-channel",
+            "owner": "snowdreams1006",
+            "admin": ["snowdreams1006"],
+            "distractionFreeMode": false
+        },
+        "icp": {
+            "number": "浙ICP备18042346号"
+        },
+        "baidu-tongji-with-multiple-channel": {
+            "url": "https://hm.baidu.com/hm.js",
+            "multipleChannelConfig": {
+                "snowdreams1006.tech":{
+                    "token": "468a97b20b79bc025d27afbee73d2f39"
+                },
+                "blog.snowdreams1006.cn":{
+                    "token": "606f5db455f771889dcfd16bb2bd313b"
+                },
+                "snowdreams1006.github.io":{
+                    "token": "5273b2f99de3bc190886abb53f62267e"
+                },
+                "snowdreams1006.gitee.io":{
+                    "token": "60ec676f32be4579eb53a430e153f677"
+                },
+                "snowdreams1006.gitlab.io":{
+                    "token": "187a0e5601c4e4987cdb5b8df09c9b21"
+                },
+                "snowdreams1006.gitbook.io":{
+                    "token": "6e2ee1b7bea146b2d6d9382bbf803083"
+                }
+            }
+        }
+    }
+}
