@@ -10,12 +10,8 @@
     },
     "plugins": [
         "favicon-absolute",
-        "github-buttons",
-        "edit-link-plus",
-        "code",
         "readmore",
         "copyright",
-        "mygitalk",
         "icp",
         "baidu-tongji-with-multiple-channel"
     ],
@@ -34,23 +30,6 @@
                 "180x180": "/apple-touch-icon-precomposed-180.png"
             }
         },
-        "github-buttons": {
-            "buttons": [{
-                "user": "snowdreams1006",
-                "repo": "gitbook-plugin-baidu-tongji-with-multiple-channel",
-                "type": "star",
-                "size": "small"
-            }]
-        },
-        "edit-link-plus": {
-            "base": {
-              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs",
-              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs",
-              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs"
-            },
-            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel/edit/master/docs",
-            "label": "我要反馈"
-        },
         "readmore": {
             "blogId": "15702-1569305559839-744",
             "name": "雪之梦技术驿站",
@@ -64,16 +43,10 @@
             "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png",
             "copyProtect": false
         },
-        "mygitalk": {
-            "clientID": "dddbf6539f8f8ca57cef",
-            "clientSecret": "45e8bbcbb62b09d93f471d53e55568d7a1370b0f",
-            "repo": "gitbook-plugin-baidu-tongji-with-multiple-channel",
-            "owner": "snowdreams1006",
-            "admin": ["snowdreams1006"],
-            "distractionFreeMode": false
-        },
         "icp": {
-            "number": "浙ICP备18042346号"
+            "label": "&copy snowdreams1006 版权所有",
+            "number": "浙ICP备18042346号",
+            "link": "https://beian.miit.gov.cn/"
         },
         "baidu-tongji-with-multiple-channel": {
             "url": "https://hm.baidu.com/hm.js",

@@ -12,12 +12,6 @@
 
 > Gitbook 百度统计插件,支持多渠道独立统计,一份源码多处部署独立统计.
 
-### 🏠 [主页](https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel)
-
-- Github : [https://snowdreams1006.github.io/gitbook-plugin-baidu-tongji-with-multiple-channel/](https://snowdreams1006.github.io/gitbook-plugin-baidu-tongji-with-multiple-channel/)
-- GitLab: [https://snowdreams1006.gitlab.io/gitbook-plugin-baidu-tongji-with-multiple-channel/](https://snowdreams1006.gitlab.io/gitbook-plugin-baidu-tongji-with-multiple-channel/)
-- Gitee : [https://snowdreams1006.gitee.io/gitbook-plugin-baidu-tongji-with-multiple-channel/](https://snowdreams1006.gitee.io/gitbook-plugin-baidu-tongji-with-multiple-channel/)
-
 ## 预览
 
 **用法**
@@ -261,6 +255,8 @@ var _hmt = _hmt || [];
 ## 支持
 
 如果这个项目对您有帮助,请给个[星星](https://github.com/snowdreams1006/gitbook-plugin-baidu-tongji-with-multiple-channel) !
+
+![snowdreams1006-wechat-donate.jpg](https://snowdreams1006.github.io/snowdreams1006-wechat-donate.jpg)
 
 ## 版权
 
