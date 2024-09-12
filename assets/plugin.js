@@ -19,11 +19,18 @@ require(["gitbook"], function(gitbook) {
         }
         
         // 自动插入百度统计代码
+        window._hmt = window._hmt || [];
         if(url !== "" && token !== ""){
             var hm = document.createElement("script");
             hm.src = url + '?' + token;
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         }
+    });
+    
+    // 跟踪受访页面
+    gitbook.events.bind("page.change", function () {
+        var path = window.location.pathname + window.location.search
+        _hmt.push(['_trackPageview', path]);
     });
 });
